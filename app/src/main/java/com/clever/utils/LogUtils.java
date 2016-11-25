@@ -8,11 +8,11 @@ import android.util.Log;
  * @author liuhea
  * @created 16-11-24
  */
-public class KLog {
+public class LogUtils {
     public static final String LOG_TAG = "KLog";
     public static boolean DEBUG = true;
 
-    public KLog() {
+    public LogUtils() {
     }
 
     public static final void analytics(String log) {

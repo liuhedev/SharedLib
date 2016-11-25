@@ -1,7 +1,10 @@
 package com.clever.base;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import butterknife.ButterKnife;
 
 /**
  * Activity基类
@@ -10,11 +13,17 @@ import android.os.Bundle;
  * @created 16-11-24
  */
 public abstract class BaseActivity extends AppCompatActivity {
+    protected static final String TAG = BaseActivity.class.getSimpleName();
+    protected Activity mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResId());
+
+        ButterKnife.bind(this);
+        mContext = this;
+
         initView();
         initListener();
         initData();
@@ -29,5 +38,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected abstract void initData();
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

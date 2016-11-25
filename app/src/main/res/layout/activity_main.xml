@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.clever.ui.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <include layout="@layout/view_toolbar"></include>
+
+    <include layout="@layout/view_listview"></include>
 </RelativeLayout>
