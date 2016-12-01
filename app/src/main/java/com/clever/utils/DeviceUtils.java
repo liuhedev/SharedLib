@@ -12,6 +12,14 @@ import com.clever.base.BaseApplication;
  * @created 16-11-25 .
  */
 public class DeviceUtils {
+    /**
+     * 获取手机IMEI序列号
+     */
+    public static String getIMEI() {
+        TelephonyManager tel = (TelephonyManager) BaseApplication.getApplication()
+                .getSystemService(Context.TELEPHONY_SERVICE);
+        return tel.getDeviceId();
+    }
 
     /**
      * 判断是否有网络
@@ -26,13 +34,11 @@ public class DeviceUtils {
     }
 
     /**
-     * 获取手机IMEI序列号
+     * 获取网络类型
      */
-    public static String getIMEI() {
-        TelephonyManager tel = (TelephonyManager) BaseApplication.getApplication()
-                .getSystemService(Context.TELEPHONY_SERVICE);
-        return tel.getDeviceId();
-    }
 
+    /**
+     * 获取手机系统型号等信息
+     */
 
 }
