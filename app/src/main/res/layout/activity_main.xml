@@ -7,7 +7,4 @@
     android:layout_height="match_parent"
     tools:context="com.clever.ui.activity.MainActivity">
 
-    <include layout="@layout/view_toolbar"></include>
-
-    <include layout="@layout/view_listview"></include>
 </RelativeLayout>

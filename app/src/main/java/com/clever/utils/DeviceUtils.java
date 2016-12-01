@@ -2,6 +2,8 @@ package com.clever.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.telephony.TelephonyManager;
 
 import com.clever.base.BaseApplication;
 
@@ -11,9 +13,25 @@ import com.clever.base.BaseApplication;
  */
 public class DeviceUtils {
 
+    /**
+     * 判断是否有网络
+     */
     public static boolean hasInternet() {
-        boolean hasInternet = ((ConnectivityManager) BaseApplication.getApplication().getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo() != null;
-        return hasInternet;
+        ConnectivityManager connectivity = (ConnectivityManager) BaseApplication.getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivity == null) {
+            return false;
+        }
+        NetworkInfo info = connectivity.getActiveNetworkInfo();
+        return info != null && info.isConnected();
+    }
+
+    /**
+     * 获取手机IMEI序列号
+     */
+    public static String getIMEI() {
+        TelephonyManager tel = (TelephonyManager) BaseApplication.getApplication()
+                .getSystemService(Context.TELEPHONY_SERVICE);
+        return tel.getDeviceId();
     }
 
 

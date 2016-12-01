@@ -13,7 +13,6 @@ import butterknife.ButterKnife;
  */
 public class BaseApplication extends Application {
 
-
     private static Context mContext;
 
     @Override
