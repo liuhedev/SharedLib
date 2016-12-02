@@ -1,5 +1,6 @@
 package com.clever.ui.activity;
 
+import com.clever.R;
 import com.cleverlib.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
@@ -13,12 +14,12 @@ public class MainActivity extends BaseActivity {
     protected void initView() {
     }
 
+    @Override
+    public void initData() {
+    }
 
     @Override
     protected void initListener() {
     }
 
-    @Override
-    public void initData() {
-    }
 }

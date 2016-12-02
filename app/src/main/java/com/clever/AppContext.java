@@ -1,7 +1,7 @@
 package com.clever;
 
-import com.clever.base.BaseApplication;
 import com.clever.utils.LogUtils;
+import com.cleverlib.base.BaseApplication;
 
 /**
  * @author liuhea .

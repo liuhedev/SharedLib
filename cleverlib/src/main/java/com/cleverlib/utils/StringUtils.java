@@ -33,13 +33,19 @@ public class StringUtils {
     /**
      * 字符串转整数
      */
-    public static int toInt(String str) {
+    public static int toInt(String str, int defValue) {
         try {
             return Integer.parseInt(str);
         } catch (Exception e) {
-            e.printStackTrace();
         }
-        return 0;
+        return defValue;
+    }
+
+    /**
+     * 字符串转整数
+     */
+    public static int toInt(String str) {
+        return toInt(str, 0);
     }
 
 }
