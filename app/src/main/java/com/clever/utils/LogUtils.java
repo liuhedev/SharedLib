@@ -9,7 +9,7 @@ import android.util.Log;
  * @created 16-11-24
  */
 public class LogUtils {
-    public static final String LOG_TAG = "KLog";
+    public static final String LOG_TAG = "LogUtils";
     public static boolean DEBUG = true;
 
     public LogUtils() {

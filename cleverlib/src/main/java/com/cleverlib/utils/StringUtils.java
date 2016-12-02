@@ -1,6 +1,8 @@
 package com.cleverlib.utils;
 
 /**
+ * 字符串处理的工具类
+ *
  * @author liuhea .
  * @created 16-12-1 .
  */

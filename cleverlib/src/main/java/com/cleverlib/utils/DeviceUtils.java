@@ -5,7 +5,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 
-import com.clever.base.BaseApplication;
+import com.cleverlib.base.BaseApplication;
+
 
 /**
  * @author liuhea .

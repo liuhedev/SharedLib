@@ -1,8 +1,6 @@
 package com.clever.ui.activity;
 
-
-import com.clever.R;
-import com.clever.base.BaseActivity;
+import com.cleverlib.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
 
