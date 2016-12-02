@@ -1,4 +1,4 @@
-package com.clever.utils;
+package com.cleverlib.utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;

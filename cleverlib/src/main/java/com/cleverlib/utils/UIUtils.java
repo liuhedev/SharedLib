@@ -1,6 +1,6 @@
-package com.clever.utils;
+package com.cleverlib.utils;
 
-import com.clever.base.BaseApplication;
+import com.cleverlib.base.BaseApplication;
 
 /**
  * UI相关工具类

@@ -1,11 +1,7 @@
-package com.clever.base;
+package com.cleverlib.base;
 
 import android.app.Application;
 import android.content.Context;
-
-import com.squareup.leakcanary.LeakCanary;
-
-import butterknife.ButterKnife;
 
 /**
  * @author liuhea .
@@ -20,8 +16,6 @@ public class BaseApplication extends Application {
         super.onCreate();
 
         mContext = this;
-        ButterKnife.setDebug(true);
-        LeakCanary.install(this);
     }
 
     public static synchronized BaseApplication getApplication() {

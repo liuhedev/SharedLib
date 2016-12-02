@@ -1,4 +1,4 @@
-package com.clever.utils;
+package com.cleverlib.utils;
 
 import android.text.Editable;
 import android.text.TextWatcher;

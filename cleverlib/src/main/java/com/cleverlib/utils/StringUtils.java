@@ -1,4 +1,4 @@
-package com.clever.utils;
+package com.cleverlib.utils;
 
 /**
  * @author liuhea .

@@ -1,4 +1,4 @@
-package com.clever.base;
+package com.cleverlib.base;
 
 import android.app.Activity;
 import android.os.Bundle;

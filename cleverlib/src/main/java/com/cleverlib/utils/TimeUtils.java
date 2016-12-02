@@ -1,4 +1,4 @@
-package com.clever.utils;
+package com.cleverlib.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
