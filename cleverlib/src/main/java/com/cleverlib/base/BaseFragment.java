@@ -12,17 +12,26 @@ import android.view.ViewGroup;
  * @author liuhea
  * @created 16-11-24
  */
-public class BaseFragment extends Fragment {
+public abstract class BaseFragment extends Fragment {
+
+    protected View mRootView;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+
+        mRootView = inflater.inflate(getContentViewId(), container, false);
+
+        return mRootView;
     }
+
+    protected abstract int getContentViewId();
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
     }
+
 }
 
 
