@@ -23,20 +23,7 @@ public class DeviceUtils {
     }
 
     /**
-     * 判断是否有网络
-     */
-    public static boolean hasInternet() {
-        ConnectivityManager connectivity = (ConnectivityManager) BaseApplication.getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (connectivity == null) {
-            return false;
-        }
-        NetworkInfo info = connectivity.getActiveNetworkInfo();
-        return info != null && info.isConnected();
-    }
 
-    /**
-     * 获取网络类型
-     */
 
     /**
      * 获取手机系统型号等信息

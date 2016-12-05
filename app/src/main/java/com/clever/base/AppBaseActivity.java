@@ -17,14 +17,24 @@ public class AppBaseActivity extends BaseActivity {
         return 0;
     }
 
+
+    @Override
+    protected void onBeforeSetContentLayout() {
+        super.onBeforeSetContentLayout();
+    }
+
+    @Override
+    protected void onAfterSetContentLayout() {
+        super.onAfterSetContentLayout();
+        ButterKnife.bind(this);
+    }
+
     @Override
     protected void initView() {
     }
 
     @Override
-    protected void onBeforeSetContentLayout() {
-        super.onBeforeSetContentLayout();
-        ButterKnife.bind(this);
+    protected void initListener() {
     }
 
     @Override
@@ -32,7 +42,4 @@ public class AppBaseActivity extends BaseActivity {
     }
 
 
-    @Override
-    protected void initListener() {
-    }
 }

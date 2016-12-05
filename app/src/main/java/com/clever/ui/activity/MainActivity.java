@@ -1,9 +1,17 @@
 package com.clever.ui.activity;
 
-import com.clever.R;
-import com.cleverlib.base.BaseActivity;
+import android.widget.TextView;
 
-public class MainActivity extends BaseActivity {
+import com.clever.R;
+import com.clever.base.AppBaseActivity;
+import com.cleverlib.utils.NetworkUtils;
+
+import butterknife.BindView;
+
+public class MainActivity extends AppBaseActivity {
+
+    @BindView(R.id.tv)
+    TextView mTv;
 
     @Override
     protected int getLayoutResId() {
@@ -14,12 +22,9 @@ public class MainActivity extends BaseActivity {
     protected void initView() {
     }
 
+
     @Override
     public void initData() {
+        mTv.setText(NetworkUtils.getNetworkTypeName(mContext));
     }
-
-    @Override
-    protected void initListener() {
-    }
-
 }

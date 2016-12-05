@@ -17,10 +17,12 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         mContext = this;
+
         onBeforeSetContentLayout();
         setContentView(getLayoutResId());
+        onAfterSetContentLayout();
+
         init(savedInstanceState);
 
         initView();
@@ -30,6 +32,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     protected void onBeforeSetContentLayout() {
+    }
+
+    protected void onAfterSetContentLayout() {
     }
 
     protected void init(Bundle savedInstanceState) {
