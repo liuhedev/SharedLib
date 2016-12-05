@@ -1,6 +1,6 @@
 package com.clever;
 
-import com.clever.utils.LogUtils;
+import com.cleverlib.utils.LogUtils;
 import com.cleverlib.base.BaseApplication;
 
 /**
@@ -13,6 +13,6 @@ public class AppContext extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        LogUtils.log(TAG, "startApplication");
+        LogUtils.i(TAG, "startApplication");
     }
 }

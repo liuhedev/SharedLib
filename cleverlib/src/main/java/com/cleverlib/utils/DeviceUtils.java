@@ -1,11 +1,11 @@
 package com.cleverlib.utils;
 
 import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 
 import com.cleverlib.base.BaseApplication;
+
+import java.util.UUID;
 
 
 /**
@@ -13,6 +13,14 @@ import com.cleverlib.base.BaseApplication;
  * @created 16-11-25 .
  */
 public class DeviceUtils {
+
+    /**
+     * Don't let anyone instantiate this class.
+     */
+    private DeviceUtils() {
+        throw new Error("Do not need instantiate!");
+    }
+
     /**
      * 获取手机IMEI序列号
      */
@@ -22,7 +30,17 @@ public class DeviceUtils {
         return tel.getDeviceId();
     }
 
-    /**
+    public static String getUUID() {
+        final TelephonyManager tm = (TelephonyManager) BaseApplication.getApplication().getSystemService(Context.TELEPHONY_SERVICE);
+        final String tmDevice, tmSerial, androidId;
+        tmDevice = "" + tm.getDeviceId();
+        tmSerial = "" + tm.getSimSerialNumber();
+        androidId = "" + android.provider.Settings.Secure.getString(BaseApplication.getApplication().getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
+        UUID deviceUuid = new UUID(androidId.hashCode(), ((long) tmDevice.hashCode() << 32) | tmSerial.hashCode());
+        String uniqueId = deviceUuid.toString();
+        LogUtils.d("uuid=" + uniqueId);
+        return uniqueId;
+    }
 
 
     /**

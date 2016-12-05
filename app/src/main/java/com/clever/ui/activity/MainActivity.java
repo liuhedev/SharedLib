@@ -1,11 +1,13 @@
 package com.clever.ui.activity;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.clever.R;
 import com.clever.base.AppBaseActivity;
+import com.cleverlib.utils.DeviceUtils;
 
 import butterknife.BindString;
 import butterknife.BindView;
@@ -32,7 +34,10 @@ public class MainActivity extends AppBaseActivity {
     @Override
     public void initData() {
         mTv.setText(mString);
+        String uuid = DeviceUtils.getUUID();
+        Log.d(TAG, uuid);
     }
+
 
     @OnClick(R.id.tv)
     public void testClick(View view) {
