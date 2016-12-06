@@ -17,4 +17,7 @@
 
 [9]Splash页面展示，base类（entity、Activity、Fragmetn等）抽取等。
 
-[10]注解、Dagger、LeakCanary检测内存泄露、 EventBus，数据库（GreenDao等）等使用。
+[10]ButterKnife、Dagger、LeakCanary检测内存泄露、 EventBus，数据库（GreenDao等）等使用。
+
+ref:
+[1] naming convention：http://jeroenmols.com/blog/2016/03/07/resourcenaming/
