@@ -35,6 +35,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.MainActivity"/>
+
+        <service
+            android:name=".service.NoticeService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>
