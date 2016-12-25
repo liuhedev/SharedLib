@@ -1,6 +1,8 @@
-package com.clever.interf;
+package com.cleverlib.interf;
 
 /**
+ * 查找控件，填充布局
+ *
  * @author liuhea .
  * @created 16-11-29 .
  */
