@@ -4,13 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-
-
-
-
-
-
-
-
+    <color name="btn_login_normal">#00ACFF</color>
+    <color name="btn_login_pressed">#00A1DB</color>
+    <color name="all_white">#ffffff</color>
 
 </resources>

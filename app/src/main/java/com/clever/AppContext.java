@@ -19,6 +19,16 @@ public class AppContext extends BaseApplication {
         LogUtils.i(TAG, "startApplication");
 
         initEasemob();
+
+        initBaiduMap();
+    }
+
+    /**
+     * 配置百度地图
+     */
+    private void initBaiduMap() {
+//        SDKInitializer.initialize(getApplicationContext());
+
     }
 
     /**

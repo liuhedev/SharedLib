@@ -5,10 +5,17 @@
     <string name="sure">确定</string>
     <string name="cancel">取消</string>
 
+    <string name="login">登录</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_new_user">新用户</string>
+    <string name="login_register">注册</string>
+
     <string name="main_tab_name_news">综合</string>
     <string name="main_tab_name_tweet">动弹</string>
     <string name="main_tab_name_quick">快速</string>
     <string name="main_tab_name_my">我的</string>
     <string name="main_tab_name_explore">发现</string>
+    <string name="title_activity_login">LoginActivity</string>
 
 </resources>

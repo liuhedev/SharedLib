@@ -7,10 +7,15 @@
     android:layout_height="match_parent"
     tools:context="com.clever.ui.activity.MainActivity">
 
-    <com.baidu.mapapi.map.MapView
-        android:id="@+id/bmapView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:clickable="true" />
+    <!--<com.baidu.mapapi.map.MapView-->
+    <!--android:id="@+id/bmapView"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:clickable="true" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="liuha a "
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

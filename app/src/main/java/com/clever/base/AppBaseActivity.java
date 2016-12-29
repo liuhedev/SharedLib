@@ -1,6 +1,8 @@
 package com.clever.base;
 
 
+import android.content.Intent;
+
 import com.cleverlib.base.BaseActivity;
 
 import butterknife.ButterKnife;
@@ -41,5 +43,10 @@ public class AppBaseActivity extends BaseActivity {
     protected void initData() {
     }
 
-
+    protected void startActivity(Class clazz, boolean isFinishSelf) {
+        startActivity(new Intent(this, clazz));
+        if (isFinishSelf) {
+            finish();
+        }
+    }
 }
