@@ -1,6 +1,6 @@
 ## Introduce.
 
-- [1]项目框架搭建，考虑到的结构包含mvc、mvp和mvvm 等。
+- [1]项目框架搭建，暂时使用mvp模式，后期考虑到扩展将另外开分支扩展mvvm等。
 - [2]网络框架封装，涉及到Volley、OkHttp、RxJava、NoHttp和Retrofit等封装使用。
 - [3]图片加载，包含缓存处理及优化，考虑到的框架包含ImageLoader、Picasso、Glide等。
 - [4]基本数据处理及解析，其中json数据考虑使用Gson, fastjson等，xml暂时使用Dom4j；
@@ -12,4 +12,5 @@
 - [10]ButterKnife、Dagger、LeakCanary检测内存泄露、 EventBus，数据库（GreenDao等）等使用。
 
 ## Reference.
-[1] naming convention：http://jeroenmols.com/blog/2016/03/07/resourcenaming/
+[1] 资源文件命名规范：http://jeroenmols.com/blog/2016/03/07/resourcenaming/
+
