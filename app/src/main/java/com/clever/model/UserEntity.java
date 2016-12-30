@@ -1,6 +1,6 @@
 package com.clever.model;
 
-import com.clever.base.BaseBean;
+import cn.bmob.v3.BmobUser;
 
 /**
  * 用户的信息
@@ -9,9 +9,7 @@ import com.clever.base.BaseBean;
  * @date 2016-12-29</p>
  */
 
-public class UserEntity extends BaseBean {
-
-    public String username;
-    public String password;
-
+public class UserEntity extends BmobUser {
+    public UserEntity() {
+    }
 }

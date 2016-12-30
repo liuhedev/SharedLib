@@ -1,10 +1,13 @@
 package com.clever;
 
+import com.clever.manager.KeyConstants;
 import com.cleverlib.base.BaseApplication;
 import com.cleverlib.utils.LogUtils;
 import com.cleverlib.utils.ProcessUtils;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
+
+import cn.bmob.v3.Bmob;
 
 /**
  * @author liuhea .
@@ -19,17 +22,10 @@ public class AppContext extends BaseApplication {
         LogUtils.i(TAG, "startApplication");
 
         initEasemob();
-
+        initBmob();
         initBaiduMap();
     }
 
-    /**
-     * 配置百度地图
-     */
-    private void initBaiduMap() {
-//        SDKInitializer.initialize(getApplicationContext());
-
-    }
 
     /**
      * 配置环信
@@ -56,5 +52,20 @@ public class AppContext extends BaseApplication {
         EMClient.getInstance().init(this, options);
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
         EMClient.getInstance().setDebugMode(true);
+    }
+
+    /**
+     * 配置Bmob后端云
+     */
+    private void initBmob() {
+        Bmob.initialize(this, KeyConstants.BMOB_KEY);
+    }
+
+    /**
+     * 配置百度地图
+     */
+    private void initBaiduMap() {
+//        SDKInitializer.initialize(getApplicationContext());
+
     }
 }

@@ -1,5 +1,7 @@
 package com.clever.utils;
 
+import com.cleverlib.utils.StringUtils;
+
 /**
  * 数据校验工具类
  *
@@ -19,7 +21,10 @@ public class ValidatorUtils {
      * @return
      */
     public static boolean checkUsername(String username) {
-        return false;
+        if (StringUtils.isEmpty(username)) {
+            return false;
+        }
+        return username.matches("^[a-zA-Z]\\w{2,19}$");
     }
 
     /**
@@ -29,6 +34,9 @@ public class ValidatorUtils {
      * @return
      */
     public static boolean checkPassword(String password) {
-        return false;
+        if (StringUtils.isEmpty(password)) {
+            return false;
+        }
+        return password.matches("^[0-9]{3,20}$");
     }
 }

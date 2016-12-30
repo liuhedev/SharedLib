@@ -17,5 +17,6 @@
     <string name="main_tab_name_my">我的</string>
     <string name="main_tab_name_explore">发现</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
 
 </resources>
