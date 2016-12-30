@@ -22,11 +22,13 @@ public class RegisterPresenterImpl implements RegisterPresenter {
     }
 
     @Override
-    public void createUser(String username, String password) {
+    public void registerUser(String username, String password) {
         /**
          * 1.数据校验
-         * 2.注册bmob
+         * 2.注册bmob云数据库
          *  2.1 成功 注册环信
+         *      2.1.1环信注册成功，成功
+         *      2.1.2环信注册失败，删除bmob保存的用户
          *  2.2 失败
          */
         UserEntity userEntity = new UserEntity();

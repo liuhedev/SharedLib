@@ -13,6 +13,7 @@ import com.clever.base.AppBaseActivity;
 import com.clever.presenter.RegisterPresenter;
 import com.clever.presenter.impl.RegisterPresenterImpl;
 import com.clever.ui.interf.RegisterView;
+import com.clever.utils.ValidatorUtils;
 import com.cleverlib.utils.LogUtils;
 
 import butterknife.BindView;
@@ -36,7 +37,7 @@ public class RegisterActivity extends AppBaseActivity implements RegisterView, T
     EditText mEtLoginPwd;
     @BindView(R.id.til_login_pwd)
     TextInputLayout mTilLoginPwd;
-    @BindView(R.id.btn_login)
+    @BindView(R.id.btn_register)
     Button mBtnRegister;
 
     private RegisterPresenter mRegisterPresenter;
@@ -54,11 +55,11 @@ public class RegisterActivity extends AppBaseActivity implements RegisterView, T
     @Override
     protected void initListener() {
         super.initListener();
-        // 监听键盘输入 .
+        // 监听EditText输入完成后的软键盘操作 .
         mEtLoginPwd.setOnEditorActionListener(this);
     }
 
-    @OnClick(R.id.btn_login)
+    @OnClick(R.id.btn_register)
     public void onClick() {
         registerUser();
     }
@@ -80,8 +81,24 @@ public class RegisterActivity extends AppBaseActivity implements RegisterView, T
         String username = mEtLoginUsername.getText().toString().trim();
         String password = mEtLoginPwd.getText().toString().trim();
 
+        if (!ValidatorUtils.checkUsername(username)) {
+            mTilLoginUsername.setErrorEnabled(false);
+            mTilLoginUsername.setError(getResString(R.string.login_error_username));
+            return;
+        } else {
+            mTilLoginUsername.setErrorEnabled(false);
+        }
+
+        if (!ValidatorUtils.checkPassword(password)) {
+            mTilLoginPwd.setErrorEnabled(true);
+            mTilLoginPwd.setError(getResString(R.string.login_error_password));
+            return;
+        } else {
+            mTilLoginPwd.setErrorEnabled(false);
+        }
+
         mRegisterPresenter = new RegisterPresenterImpl(this);
-        mRegisterPresenter.createUser(username, password);
+        mRegisterPresenter.registerUser(username, password);
     }
 
     @Override

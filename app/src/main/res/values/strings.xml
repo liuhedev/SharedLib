@@ -6,10 +6,12 @@
     <string name="cancel">取消</string>
 
     <string name="login">登录</string>
-    <string name="login_username">用户名</string>
-    <string name="login_password">密码</string>
+    <string name="login_username">请输入用户名</string>
+    <string name="login_password">请输入密码</string>
     <string name="login_new_user">新用户</string>
     <string name="login_register">注册</string>
+    <string name="login_error_username">用户名不合法</string>
+    <string name="login_error_password">密码不合法</string>
 
     <string name="main_tab_name_news">综合</string>
     <string name="main_tab_name_tweet">动弹</string>

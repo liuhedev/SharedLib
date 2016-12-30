@@ -9,5 +9,5 @@ package com.clever.presenter;
 
 public interface RegisterPresenter {
 
-    void createUser(String username, String password);
+    void registerUser(String username, String password);
 }

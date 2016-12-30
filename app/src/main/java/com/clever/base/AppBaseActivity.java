@@ -9,6 +9,8 @@ import butterknife.ButterKnife;
 
 
 /**
+ * Clever Activity基类
+ *
  * @author liuhea .
  * @created 16-12-2 .
  */
@@ -18,7 +20,6 @@ public class AppBaseActivity extends BaseActivity {
     protected int getLayoutResId() {
         return 0;
     }
-
 
     @Override
     protected void onBeforeSetContentLayout() {
@@ -48,5 +49,9 @@ public class AppBaseActivity extends BaseActivity {
         if (isFinishSelf) {
             finish();
         }
+    }
+
+    protected String getResString(int stringId) {
+        return getResources().getString(stringId);
     }
 }
