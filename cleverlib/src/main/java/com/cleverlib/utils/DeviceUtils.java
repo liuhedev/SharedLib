@@ -18,7 +18,7 @@ public class DeviceUtils {
      * Don't let anyone instantiate this class.
      */
     private DeviceUtils() {
-        throw new Error("Do not need instantiate!");
+        throw new UnsupportedOperationException("you can't instantiate me.");
     }
 
     /**

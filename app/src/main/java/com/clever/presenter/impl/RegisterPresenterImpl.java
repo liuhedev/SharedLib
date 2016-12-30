@@ -25,7 +25,7 @@ public class RegisterPresenterImpl implements RegisterPresenter {
     public void registerUser(String username, String password) {
         /**
          * 1.数据校验
-         * 2.注册bmob云数据库
+         * 2.注册Bmob云数据库
          *  2.1 成功 注册环信
          *      2.1.1环信注册成功，成功
          *      2.1.2环信注册失败，删除bmob保存的用户

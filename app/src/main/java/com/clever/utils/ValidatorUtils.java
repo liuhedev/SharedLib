@@ -12,6 +12,7 @@ import com.cleverlib.utils.StringUtils;
 public class ValidatorUtils {
 
     private ValidatorUtils() {
+        throw new UnsupportedOperationException("you can't instantiate me.");
     }
 
     /**

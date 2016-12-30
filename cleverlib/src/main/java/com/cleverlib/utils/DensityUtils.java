@@ -12,6 +12,9 @@ import com.cleverlib.base.BaseApplication;
  * @created 16-12-2 .
  */
 public class DensityUtils {
+    private DensityUtils() {
+        throw new UnsupportedOperationException("you can't instantiate me.");
+    }
 
     /**
      * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
