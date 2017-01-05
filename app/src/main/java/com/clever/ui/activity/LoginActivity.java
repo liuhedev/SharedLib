@@ -5,7 +5,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.clever.R;
 import com.clever.base.AppBaseActivity;
@@ -78,7 +77,10 @@ public class LoginActivity extends AppBaseActivity implements LoginView {
     private void login() {
         // 表单校验
         // 服务器校验
-        Toast.makeText(mContext, "登录逻辑", Toast.LENGTH_SHORT).show();
+        startActivity(TempActivity.class,false);
+//        String s = "王晓明".substring(0, 1).toUpperCase();
+//        Toast.makeText(mContext, s, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mContext, "登录逻辑", Toast.LENGTH_SHORT).show();
 //        mLoginPresenter.checkUser(mUsername, mPassword);
     }
 }
