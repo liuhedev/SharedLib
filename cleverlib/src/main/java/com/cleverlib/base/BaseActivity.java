@@ -21,9 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         onBeforeSetContentLayout();
         setContentView(getLayoutResId());
-        onAfterSetContentLayout();
-
-        init(savedInstanceState);
+        onAfterSetContentLayout(savedInstanceState);
 
         initView();
         initListener();
@@ -34,10 +32,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onBeforeSetContentLayout() {
     }
 
-    protected void onAfterSetContentLayout() {
-    }
-
-    protected void init(Bundle savedInstanceState) {
+    protected void onAfterSetContentLayout(Bundle savedInstanceState) {
     }
 
     protected abstract int getLayoutResId();

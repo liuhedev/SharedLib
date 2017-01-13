@@ -2,6 +2,7 @@ package com.clever.base;
 
 
 import android.content.Intent;
+import android.os.Bundle;
 
 import com.cleverlib.base.BaseActivity;
 
@@ -27,8 +28,8 @@ public class AppBaseActivity extends BaseActivity {
     }
 
     @Override
-    protected void onAfterSetContentLayout() {
-        super.onAfterSetContentLayout();
+    protected void onAfterSetContentLayout(Bundle savedInstanceState) {
+        super.onAfterSetContentLayout(savedInstanceState);
         ButterKnife.bind(this);
     }
 
