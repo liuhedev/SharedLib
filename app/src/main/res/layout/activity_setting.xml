@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.clever.ui.activity.SettingActivity">
+
+    <LinearLayout
+        android:id="@+id/rl_clean_cache"
+        style="@style/option_item_rl"
+        android:background="@drawable/ic_material"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/option_item_text_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/clean_cache"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_14"
+            tools:ignore="RelativeOverlap"
+            tools:text="13M"/>
+    </LinearLayout>
+</RelativeLayout>
