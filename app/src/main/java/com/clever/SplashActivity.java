@@ -8,7 +8,6 @@ import com.clever.base.AppBaseActivity;
 import com.clever.presenter.SplashPresenter;
 import com.clever.presenter.impl.SplashPresenterImpl;
 import com.clever.ui.activity.MainActivity;
-import com.clever.ui.activity.SettingActivity;
 import com.clever.ui.interf.SplashView;
 import com.cleverlib.utils.SimpleAnimatorListener;
 
@@ -58,7 +57,7 @@ public class SplashActivity extends AppBaseActivity implements SplashView {
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     super.onAnimationEnd(animation);
-                    startActivity(SettingActivity.class, true);
+                    startActivity(MainActivity.class, true);
                 }
             });
         } else {
