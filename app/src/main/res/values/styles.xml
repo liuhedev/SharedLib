@@ -6,6 +6,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!--设置状态栏透明 api>=21-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+
+        <!--标题栏颜色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
     <declare-styleable name="CircleImageView">

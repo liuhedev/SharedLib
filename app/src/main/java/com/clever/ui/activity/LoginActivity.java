@@ -77,7 +77,6 @@ public class LoginActivity extends AppBaseActivity implements LoginView {
     private void login() {
         // 表单校验
         // 服务器校验
-        startActivity(TempActivity.class,false);
 //        String s = "王晓明".substring(0, 1).toUpperCase();
 //        Toast.makeText(mContext, s, Toast.LENGTH_SHORT).show();
 //        Toast.makeText(mContext, "登录逻辑", Toast.LENGTH_SHORT).show();

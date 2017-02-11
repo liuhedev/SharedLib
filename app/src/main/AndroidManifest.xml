@@ -102,6 +102,8 @@
         </activity>
         <activity android:name=".ui.activity.SettingActivity">
         </activity>
+        <activity android:name=".ui.activity.AppBarActivity">
+        </activity>
     </application>
 
 </manifest>
