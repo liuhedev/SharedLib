@@ -26,11 +26,11 @@ task clean(type: Delete) {
 ext {
     compileSdkVersion = 25
     buildToolsVersion = "25.0.2"
-
-    applicationId = "com.clever"
     minSdkVersion = 15
     targetSdkVersion = 25
+    supportLibVersion = '23.4.0'
 
+    applicationId = "com.clever"
     versionCode = 1
     versionName = "v1.0"
 }
