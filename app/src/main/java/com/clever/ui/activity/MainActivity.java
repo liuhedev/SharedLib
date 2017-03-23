@@ -13,9 +13,9 @@ import android.widget.LinearLayout;
 
 import com.clever.R;
 import com.clever.base.AppBaseActivity;
-import com.clever.ui.fragment.Tab1Fragment;
-import com.clever.ui.fragment.Tab2Fragment;
-import com.clever.ui.fragment.Tab3Fragment;
+import com.clever.ui.fragment.TypefaceFragment;
+import com.clever.ui.fragment.MediaFragment;
+import com.clever.ui.fragment.RcyFragment;
 
 import java.util.ArrayList;
 
@@ -60,9 +60,9 @@ public class MainActivity extends AppBaseActivity {
 
     private void intTabData() {
         mFragments = new ArrayList<>();
-        mFragments.add(setTab(new Tab1Fragment(), "tab1"));
-        mFragments.add(setTab(new Tab2Fragment(), "tab2"));
-        mFragments.add(setTab(new Tab3Fragment(), "tab3"));
+        mFragments.add(setTab(new TypefaceFragment(), "typeface"));
+        mFragments.add(setTab(new MediaFragment(), "tab2"));
+        mFragments.add(setTab(new RcyFragment(), "tab3"));
     }
 
     private Fragment setTab(Fragment fragment, String title) {
