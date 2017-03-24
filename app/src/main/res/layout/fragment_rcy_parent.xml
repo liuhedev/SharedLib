@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rcy_rcy_parent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent"/>
 
-</LinearLayout>
+    <com.clever.ui.adapter.RecyclerViewHeader
+        android:id="@+id/recycler_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcy_task_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff00">
+        </android.support.v7.widget.RecyclerView>
+    </com.clever.ui.adapter.RecyclerViewHeader>
+</FrameLayout>
