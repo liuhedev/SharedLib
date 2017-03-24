@@ -332,10 +332,6 @@ public class RecyclerViewHeader extends RelativeLayout {
                 linear = null;
                 grid = (GridLayoutManager) manager;
                 staggeredGrid = null;
-//            } else if (manager instanceof StaggeredGridLayoutManager) { //TODO: 05.04.2016 implement staggered
-//                linear = null;
-//                grid = null;
-//                staggeredGrid = (StaggeredGridLayoutManager) manager;
             } else {
                 throw new IllegalArgumentException("Currently RecyclerViewHeader supports only LinearLayoutManager and GridLayoutManager.");
             }
@@ -350,8 +346,6 @@ public class RecyclerViewHeader extends RelativeLayout {
                 return 1;
             } else if (grid != null) {
                 return grid.getSpanCount();
-//            } else if (staggeredGrid != null) {
-//                return staggeredGrid.getSpanCount(); //TODO: 05.04.2016 implement staggered
             }
             return 0; //shouldn't get here
         }
@@ -361,8 +355,6 @@ public class RecyclerViewHeader extends RelativeLayout {
                 return linear.findFirstVisibleItemPosition() == 0;
             } else if (grid != null) {
                 return grid.findFirstVisibleItemPosition() == 0;
-//            } else if (staggeredGrid != null) {
-//                return staggeredGrid.findFirstCompletelyVisibleItemPositions() //TODO: 05.04.2016 implement staggered
             }
             return false; //shouldn't get here
         }
@@ -372,8 +364,6 @@ public class RecyclerViewHeader extends RelativeLayout {
                 return linear.getReverseLayout();
             } else if (grid != null) {
                 return grid.getReverseLayout();
-//            } else if (staggeredGrid != null) {
-//                return ; //TODO: 05.04.2016 implement staggered
             }
             return false; //shouldn't get here
         }
@@ -383,8 +373,6 @@ public class RecyclerViewHeader extends RelativeLayout {
                 return linear.getOrientation() == LinearLayoutManager.VERTICAL;
             } else if (grid != null) {
                 return grid.getOrientation() == LinearLayoutManager.VERTICAL;
-//            } else if (staggeredGrid != null) {
-//                return ; //TODO: 05.04.2016 implement staggered
             }
             return false; //shouldn't get here
         }
@@ -394,5 +382,4 @@ public class RecyclerViewHeader extends RelativeLayout {
     @Retention(RetentionPolicy.SOURCE)
     private @interface Visibility {
     }
-
 }

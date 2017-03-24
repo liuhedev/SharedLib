@@ -15,19 +15,19 @@ import java.util.ArrayList;
  * Created by liuhe on 2017/3/23.
  */
 
-public class ParentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ContentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     ArrayList<String> datas;
     Context mContext;
 
-    public ParentAdapter(Context context, ArrayList<String> data) {
+    public ContentAdapter(Context context, ArrayList<String> data) {
         mContext = context;
         datas = data;
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_rcy_child, null);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_rcy_parent, parent, false);
         return new ChildHolder(view);
     }
 

@@ -2,12 +2,8 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rcy_rcy_parent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <com.clever.ui.adapter.RecyclerViewHeader
         android:id="@+id/recycler_header"
@@ -22,4 +18,11 @@
             android:background="#00ff00">
         </android.support.v7.widget.RecyclerView>
     </com.clever.ui.adapter.RecyclerViewHeader>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_rcy_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
 </FrameLayout>
