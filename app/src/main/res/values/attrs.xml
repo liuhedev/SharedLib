@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EasyImageView">
+        <attr name="shape" format="integer">
+            <enum name="circle" value="1"/>
+            <enum name="rectangle" value="2"/>
+            <enum name="roundRectangle" value="3"/>
+            <enum name="square" value="4"/>
+            <enum name="polygon" value="5"/>
+        </attr>
+        <attr name="decorationsDirection" format="integer">
+            <enum name="leftTop" value="1"/>
+            <enum name="leftBottom" value="2"/>
+            <enum name="rightTop" value="3"/>
+            <enum name="rightBottom" value="4"/>
+        </attr>
+
+        <attr name="decorationsSrc" format="reference"/>
+        <attr name="radiusX" format="float"/>
+        <attr name="radiusY" format="float"/>
+        <attr name="sides" format="integer"/>
+    </declare-styleable>
+</resources>

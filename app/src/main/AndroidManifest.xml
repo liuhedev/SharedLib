@@ -96,7 +96,7 @@
                 android:value="com.clever.base.AppBaseActivity"/>
         </activity>
         <activity
-            android:name=".ui.activity.TempActivity"
+            android:name=".ui.activity.ImageViewActivity"
             android:label="@string/title_activity_temp"
             android:theme="@style/AppTheme">
         </activity>

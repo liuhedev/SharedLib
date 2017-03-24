@@ -1,5 +1,6 @@
 package com.clever.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatButton;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.clever.R;
+import com.clever.ui.activity.ImageViewActivity;
 
 public class MediaFragment extends Fragment implements View.OnClickListener {
 
@@ -54,6 +56,8 @@ public class MediaFragment extends Fragment implements View.OnClickListener {
     }
 
     private void onClickAudioPlay() {
+
+        startActivity(new Intent(getActivity(), ImageViewActivity.class));
         //    http://sherpapreview-standard.s3.cn-north-1.amazonaws.com.cn/Preview/Public/Beta/18307433.m4a
     }
 }
