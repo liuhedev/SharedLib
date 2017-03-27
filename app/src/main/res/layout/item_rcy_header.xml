@@ -9,5 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0f99aa"/>
+    <view
+        android:layout_width="match_parent"
+        android:background="#fffff0"
+        android:layout_height="2dp"></view>
 </LinearLayout>
 
