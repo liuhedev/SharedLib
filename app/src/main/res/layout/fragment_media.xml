@@ -16,4 +16,30 @@
         android:layout_height="wrap_content"
         android:text="call phone"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_media_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="open 12306"/>
+
+        <Button
+            android:id="@+id/btn_media_switch_https"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="switch https"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web_media_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
 </LinearLayout>
