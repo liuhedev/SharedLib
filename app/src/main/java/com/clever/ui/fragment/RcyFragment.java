@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.clever.R;
 import com.clever.ui.adapter.RecyclerViewHeader;
+import com.cleverlib.utils.SimpleToast;
 
 import java.util.ArrayList;
 
@@ -26,6 +27,7 @@ public class RcyFragment extends Fragment {
     }
 
     private void initData() {
+        SimpleToast.show(getActivity(), "splash");
 
     }
 

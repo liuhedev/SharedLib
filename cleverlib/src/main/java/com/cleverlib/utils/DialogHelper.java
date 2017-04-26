@@ -14,7 +14,7 @@ import android.text.TextUtils;
  * @author liuhea .
  * @created 16-11-25 .
  */
-public class DialogUtils {
+public class DialogHelper {
 
     /***
      * 获取一个dialog
@@ -24,11 +24,18 @@ public class DialogUtils {
         return builder;
     }
 
+    /**
+     * 获取一个等待对话框
+     */
+    public static ProgressDialog getProgressDialog(Context context) {
+        return new ProgressDialog(context);
+    }
+
     /***
      * 获取一个耗时等待对话框
      */
     public static ProgressDialog getWaitDialog(Context context, String message) {
-        ProgressDialog waitDialog = new ProgressDialog(context);
+        ProgressDialog waitDialog = getProgressDialog(context);
         if (!TextUtils.isEmpty(message)) {
             waitDialog.setMessage(message);
         }

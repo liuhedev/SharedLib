@@ -5,5 +5,5 @@ package com.cleverlib.utils;
  * @date 2017-02-07</p>
  */
 
-public class DataBaseUtils {
+public class DbUtils {
 }
