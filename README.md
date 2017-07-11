@@ -11,6 +11,12 @@ Android 温书📚 --> 小目标
 - [9]Splash页面展示，base类（entity、Activity、Fragmetn等）抽取等。
 - [10]ButterKnife、Dagger、LeakCanary检测内存泄露、 EventBus，数据库（GreenDao等）等使用。
 
-## Reference.
-[1] 资源文件命名规范：http://jeroenmols.com/blog/2016/03/07/resourcenaming/
+## Library
+- [1] [FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout.git)
+- [2] [BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation.git)
 
+## App
+- [1] [os-china](https://git.oschina.net/oschina/android-app.git) 若编译失败，尝试修改gradle-wrapper.properties distributionUrl=https\://services.gradle.org/distributions/gradle-2.14.1-all.zip
+
+## Reference.
+- [1] 资源文件命名规范：http://jeroenmols.com/blog/2016/03/07/resourcenaming/
