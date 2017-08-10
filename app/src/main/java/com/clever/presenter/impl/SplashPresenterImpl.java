@@ -2,7 +2,6 @@ package com.clever.presenter.impl;
 
 import com.clever.presenter.SplashPresenter;
 import com.clever.ui.interf.SplashView;
-import com.hyphenate.chat.EMClient;
 
 /**
  * @author liuhea
@@ -20,13 +19,13 @@ public class SplashPresenterImpl implements SplashPresenter {
 
     @Override
     public void isFirstLogin() {
-        if (EMClient.getInstance().isConnected() && EMClient.getInstance().isLoggedInBefore()) {
-            // 已登录，暂时替代sp .
+//        if (EMClient.getInstance().isConnected() && EMClient.getInstance().isLoggedInBefore()) {
+//            // 已登录，暂时替代sp .
             mSplashView.onFirstLogin(false);
-        } else {
-            // 未登录 .
-            mSplashView.onFirstLogin(true);
-        }
+//        } else {
+//            // 未登录 .
+//            mSplashView.onFirstLogin(true);
+//        }
 
     }
 }

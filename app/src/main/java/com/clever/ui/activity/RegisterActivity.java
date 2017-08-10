@@ -11,7 +11,6 @@ import android.widget.Toast;
 import com.clever.R;
 import com.clever.base.AppBaseActivity;
 import com.clever.presenter.RegisterPresenter;
-import com.clever.presenter.impl.RegisterPresenterImpl;
 import com.clever.ui.interf.RegisterView;
 import com.clever.utils.ValidatorUtils;
 import com.cleverlib.utils.LogUtils;
