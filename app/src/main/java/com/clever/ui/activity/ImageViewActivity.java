@@ -14,10 +14,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 
-import com.clever.widget.EasyImageView.Shape;
-
 import com.clever.R;
 import com.clever.widget.EasyImageView;
+import com.clever.widget.EasyImageView.Shape;
 
 public class ImageViewActivity extends AppCompatActivity {
 
