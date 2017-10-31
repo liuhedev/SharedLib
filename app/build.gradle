@@ -16,11 +16,9 @@ android {
     }
 
     // rename the apk with the version name
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            output.outputFile = new File(
-                    output.outputFile.parent + "/${variant.buildType.name}",
-                    "clever-${variant.versionName}-${variant.buildType.name}.apk".toLowerCase())
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "clever-${variant.versionName}-${variant.buildType.name}.apk".toLowerCase()
         }
     }
 
