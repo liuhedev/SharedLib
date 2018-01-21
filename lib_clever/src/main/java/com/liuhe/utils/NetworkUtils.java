@@ -1,4 +1,4 @@
-package com.cleverlib.utils;
+package com.liuhe.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -6,8 +6,7 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
-import com.cleverlib.base.BaseApplication;
-
+import com.liuhe.base.BaseApplication;
 
 /**
  * 获取网络状态及网络类型的工具类 .

@@ -5,7 +5,6 @@ import android.widget.Toast;
 
 import com.clever.R;
 import com.clever.base.AppBaseActivity;
-import com.cleverlib.utils.FileUtils;
 
 import java.io.File;
 

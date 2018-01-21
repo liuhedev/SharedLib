@@ -1,10 +1,9 @@
-package com.cleverlib.utils;
+package com.liuhe.utils;
 
 import android.app.ActivityManager;
 import android.content.pm.PackageManager;
 
-
-import com.cleverlib.base.BaseApplication;
+import com.liuhe.base.BaseApplication;
 
 import java.util.Iterator;
 import java.util.List;

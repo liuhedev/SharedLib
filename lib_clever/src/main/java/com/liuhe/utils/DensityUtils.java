@@ -1,10 +1,9 @@
-package com.cleverlib.utils;
+package com.liuhe.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
 
-import com.cleverlib.base.BaseApplication;
-
+import com.liuhe.base.BaseApplication;
 
 /**
  * 手机屏幕处理相关工具类

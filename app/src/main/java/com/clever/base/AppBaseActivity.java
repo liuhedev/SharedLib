@@ -4,6 +4,7 @@ package com.clever.base;
 import android.content.Intent;
 import android.os.Bundle;
 
+
 import com.cleverlib.base.BaseActivity;
 
 import butterknife.ButterKnife;

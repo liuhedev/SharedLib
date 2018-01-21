@@ -1,4 +1,4 @@
-package com.cleverlib.utils;
+package com.liuhe.utils;
 
 /**
  * 文件操作工具包
@@ -88,7 +88,7 @@ public class FileUtils {
         boolean writeSucc = false;
 
         boolean sdCardExist = Environment.getExternalStorageState().equals(
-                Environment.MEDIA_MOUNTED);
+                android.os.Environment.MEDIA_MOUNTED);
 
         String folderPath = "";
         if (sdCardExist) {

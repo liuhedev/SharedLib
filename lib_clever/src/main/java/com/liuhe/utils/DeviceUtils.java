@@ -1,10 +1,9 @@
-package com.cleverlib.utils;
+package com.liuhe.utils;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
 
-
-import com.cleverlib.base.BaseApplication;
+import com.liuhe.base.BaseApplication;
 
 import java.util.UUID;
 

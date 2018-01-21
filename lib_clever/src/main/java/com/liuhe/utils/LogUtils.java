@@ -1,9 +1,10 @@
-package com.cleverlib.utils;
+package com.liuhe.utils;
 
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.cleverlib.BuildConfig;
+import com.example.lib_clever.BuildConfig;
+
 
 /**
  * 打印log工具类
@@ -41,7 +42,7 @@ public class LogUtils {
     // 下面是传入自定义tag的函数
     public static void i(@Nullable String tag, String msg) {
         if (isDebug) {
-            StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[3];
+            StackTraceElement stackTraceElement = java.lang.Thread.currentThread().getStackTrace()[3];
             if (tag == null) {
                 Log.i(TAG, rebuildMsg(stackTraceElement, msg));
             } else {
@@ -52,7 +53,7 @@ public class LogUtils {
 
     public static void d(@Nullable String tag, String msg) {
         if (isDebug) {
-            StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[3];
+            StackTraceElement stackTraceElement = java.lang.Thread.currentThread().getStackTrace()[3];
             if (tag == null) {
                 Log.d(TAG, rebuildMsg(stackTraceElement, msg));
             } else {
@@ -63,7 +64,7 @@ public class LogUtils {
 
     public static void e(@Nullable String tag, String msg) {
         if (isDebug) {
-            StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[3];
+            StackTraceElement stackTraceElement = java.lang.Thread.currentThread().getStackTrace()[3];
             if (tag == null) {
                 Log.e(TAG, rebuildMsg(stackTraceElement, msg));
             } else {
@@ -74,7 +75,7 @@ public class LogUtils {
 
     public static void v(@Nullable String tag, String msg) {
         if (isDebug) {
-            StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[3];
+            StackTraceElement stackTraceElement = java.lang.Thread.currentThread().getStackTrace()[3];
             if (tag == null) {
                 Log.v(TAG, rebuildMsg(stackTraceElement, msg));
             } else {

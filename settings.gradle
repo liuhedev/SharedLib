@@ -1,1 +1,2 @@
-include ':app', ':cleverlib'
+include ':app'
+include ':cleverlib', ':lib_clever'

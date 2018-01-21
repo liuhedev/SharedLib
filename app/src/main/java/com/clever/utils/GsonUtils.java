@@ -1,7 +1,7 @@
 package com.clever.utils;
 
-import com.cleverlib.utils.LogUtils;
-import com.cleverlib.utils.StringUtils;
+import com.liuhe.utils.LogUtils;
+import com.liuhe.utils.StringUtils;
 import com.google.gson.Gson;
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
