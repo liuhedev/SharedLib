@@ -7,7 +7,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.1.2'
         classpath 'com.novoda:bintray-release:0.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
@@ -29,12 +29,10 @@ task clean(type: Delete) {
 
 //统一编译环境
 ext {
-    compileSdkVersion = 26
-    buildToolsVersion = "26.0.2"
+    compileSdkVersion = 27
     minSdkVersion = 17
     targetSdkVersion = 22
-    supportLibVersion = '25.3.1'
-
+    supportLibVersion = '27.1.1'
     applicationId = "com.clever"
     versionCode = 1
     versionName = "v1.0"

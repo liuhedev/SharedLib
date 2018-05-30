@@ -1,49 +1,41 @@
 apply plugin: 'com.android.library'
-
 android {
-    compileSdkVersion 26
-    buildToolsVersion "27.0.0"
-
-
+    compileSdkVersion 27
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
     }
-
     buildTypes {
         release {
             minifyEnabled false
         }
     }
-
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    testCompile 'junit:junit:4.12'
-    androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:' + rootProject.ext.supportLibVersion
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
 }
-/** 以下开始是将Android Library上传到jcenter的相关配置**/
-apply plugin: 'com.novoda.bintray-release'//添加
-publish {
-    repoName = 'lib_clever'//远程仓库名字,不指明，默认是上传到maven
-    userOrg = 'liuhea'//bintray.com的用户名
-    groupId = 'com.liuhe'//jcenter上的路径
-    artifactId = 'lib_utils'//项目名称
-    publishVersion = '1.0.0'//版本号
-    desc = 'common utils'//描述，不重要
-    website = 'https://github.com/liuhea'//项目主页
-}
-tasks.withType(Javadoc) {//防止编码问题
-    options.addStringOption('Xdoclint:none', '-quiet')
-    options.addStringOption('encoding', 'UTF-8')
-    options.addStringOption('charSet', 'UTF-8')
-}
-
+///** 以下开始是将Android Library上传到jcenter的相关配置**/
+//apply plugin: 'com.novoda.bintray-release'//添加
+//publish {
+//    repoName = 'lib_clever'//远程仓库名字,不指明，默认是上传到maven
+//    userOrg = 'liuhea'//bintray.com的用户名
+//    groupId = 'com.liuhe'//jcenter上的路径
+//    artifactId = 'lib_utils'//项目名称
+//    publishVersion = '1.0.0'//版本号
+//    desc = 'common utils'//描述，不重要
+//    website = 'https://github.com/liuhea'//项目主页
+//}
+//tasks.withType(Javadoc) {//防止编码问题
+//    options.addStringOption('Xdoclint:none', '-quiet')
+//    options.addStringOption('encoding', 'UTF-8')
+//    options.addStringOption('charSet', 'UTF-8')
+//}
+//
